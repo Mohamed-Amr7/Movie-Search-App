@@ -9,7 +9,6 @@ function App() {
             <Header text={"Movie Search App"}/>
             <main></main>
             <Footer text={"Movie Search App"} currentYear={currentYear} githubLink = {githubLink}/>
-
         </div>
     );
 }
