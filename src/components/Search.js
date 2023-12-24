@@ -20,9 +20,11 @@ const Search = (props) => {
     return (
         <form className="search">
             <input
+                placeholder="Search..."
                 value={inputValue}
                 onChange={handleInputChange}
                 type="text"
+                autoFocus={true}
             />
             <input onClick={performSearch} type="submit" value="SEARCH" />
         </form>
