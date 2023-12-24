@@ -78,10 +78,10 @@ const App = () => {
     const {movies, errorMessage, loading} = state;
 
     const retrievedMovies =
-        loading && !errorMessage ? (<img className="spinner" src= "https://media.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif" alt="Loading spinner"/>)
-            : errorMessage ? (<div className="errorMessage">{errorMessage}</div>) :
-                (movies.map((movie, index) => (
-                        <Movie movie={movie} />
+        loading && !errorMessage ? (<img className="spinner" src="https://i.gifer.com/ZZ5H.gif" alt="Loading spinner"/>)
+            : errorMessage ? (<div className="error-message">{errorMessage}</div>) :
+                (movies.map((movie) => (
+                        <Movie movie={movie}/>
                     ))
                 );
     return (
