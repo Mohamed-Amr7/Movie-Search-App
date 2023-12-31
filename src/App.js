@@ -60,6 +60,7 @@ const App = () => {
         axios(`https://www.omdbapi.com/?s=${searchMovie}&apikey=${MOVIE_API_KEY}`).then(
             jsonResponse => {
                 if (jsonResponse.data.Response === "True") {
+                    console.log(jsonResponse.data.Search);
                     dispatch({
                         type: "SEARCH_MOVIES_SUCCESS",
                         payload: jsonResponse.data.Search
